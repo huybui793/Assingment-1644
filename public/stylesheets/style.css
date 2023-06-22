@@ -4,5 +4,10 @@ body {
 }
 
 a {
-  color: #00B7FF;
+  color: #FFC0CB;
+}
+
+.navbarSupportedContent {
+  width: 100%;
+  height: 10px;
 }
