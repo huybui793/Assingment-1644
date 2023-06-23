@@ -20,7 +20,7 @@ router.get('/edit/:id', async (req, res) => {
 
 router.post('/edit/:id', async(req, res) =>{
    await toyModel.findByIdAndUpdate(req.params.id, req.body)
-   .then(()=>{console.log("Edit toy succeed!!!")});
+   .then(()=>{console.log("Edit toy succeed!")});
    res.redirect('/toy');
 })
 router.get('/add', (req, res) => {
