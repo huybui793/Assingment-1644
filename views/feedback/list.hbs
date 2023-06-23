@@ -2,31 +2,31 @@
     {{!-- table.table.table-bordered>tr*3>th*7 --}}
     <table class="table bordered">
         <tr>
-            <th class="h2 text text-success" colspan="6">FEEDBACK LIST</th>
+            <th class="h2 text text-success" colspan="6">Order List</th>
             <th>
-                <a class="btn btn-primary" href="/feedback/add">Add feedback</a>
+                <a class="btn btn-primary" href="/order/add">Add order</a>
             </th>
         </tr>
         <tr>
             <th>NameCustomer</th>
             <th>Phonenumber</th>
             <th>Address</th>
-            <th>Feedback</th>
+            <th>Order</th>
             <th>Function</th>
 
 
         </tr>
         {{!-- heach --}}
-        {{#each feedback }}
+        {{#each order }}
         <tr>
             <th>{{ NameCustomer }}</th>
             <th>{{ Phonenumber }}</th>
             <th>{{ Address }}</th>
-            <th>{{Feedback}}</th>
+            <th>{{Order}}</th>
             <th>
-                <a class="btn btn-warning" href="/feedback/edit/{{_id}}">Edit</a>
-                <a class="btn btn-danger" href="/feedback/delete/{{_id}}"
-                    onclick="return confirm('Do you want to feedback this toy ?');">Delete</a>
+                <a class="btn btn-warning" href="/Order/edit/{{_id}}">Edit</a>
+                <a class="btn btn-danger" href="/Order/delete/{{_id}}"
+                    onclick="return confirm('Do you want to order this toy ?');">Delete</a>
             </th>
         </tr>
         {{/each}}
