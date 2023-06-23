@@ -4,9 +4,9 @@ var personSchema = mongoose.Schema(
     NameCustomer : String,
     Phonenumber : Number,
     Address: String,
-    Feedback: String,
+    Order: String,
 }
 );
- var feedbackModel = mongoose.model("feedback",personSchema, "feedback" );
+ var orderModel = mongoose.model("order",personSchema, "order" );
 
-module.exports=feedbackModel;
+module.exports=orderModel;
