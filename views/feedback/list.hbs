@@ -4,7 +4,7 @@
         <tr>
             <th class="h2 text text-success" colspan="6">Order List</th>
             <th>
-                <a class="btn btn-primary" href="/order/add">Add order</a>
+                <a class="btn btn-primary" href="/order/add">Add Order</a>
             </th>
         </tr>
         <tr>
@@ -24,8 +24,8 @@
             <th>{{ Address }}</th>
             <th>{{Order}}</th>
             <th>
-                <a class="btn btn-warning" href="/Order/edit/{{_id}}">Edit</a>
-                <a class="btn btn-danger" href="/Order/delete/{{_id}}"
+                <a class="btn btn-warning" href="/order/edit/{{_id}}">Edit</a>
+                <a class="btn btn-danger" href="/order/delete/{{_id}}"
                     onclick="return confirm('Do you want to order this toy ?');">Delete</a>
             </th>
         </tr>
