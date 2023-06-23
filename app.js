@@ -9,7 +9,7 @@ var usersRouter = require('./routes/users');
 
 var app = express();
 var mongoose = require('mongoose');
-var uri = "mongodb+srv://buihuy:123@cluster0.kl7hpzs.mongodb.net/?retryWrites=true&w=majority/asm";
+var uri = "mongodb+srv://buihuy:123@cluster0.kl7hpzs.mongodb.net/asm";
 mongoose.connect(uri)
 .then(() => console.log ("Connect to DB succeed !"))
 .catch((err) => console.log (err));
@@ -22,7 +22,7 @@ app.use('/toy', toyRouter);
 //router(order)
 var orderRouter = require('./routes/order');
 app.use('/order',orderRouter);
-  // view engine setup
+// view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
 
