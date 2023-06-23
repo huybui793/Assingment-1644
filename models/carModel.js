@@ -6,7 +6,7 @@ var carSchema = mongoose.Schema(
         Brand: String,
         Quantity: String,
         Price: Number,
-        Date: Number, 
+        Date: Date, 
         Brand: String,
         BestSeller: String ,
         
@@ -16,6 +16,6 @@ var carSchema = mongoose.Schema(
 
 );
 
-var carModel = mongoose.model("cars", carSchema, "car");
+var carModel = mongoose.model("car", carSchema, "car");
 
 module.exports = carModel;

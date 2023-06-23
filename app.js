@@ -9,7 +9,7 @@ var usersRouter = require('./routes/users');
 
 var app = express();
 var mongoose = require('mongoose');
-var uri = "mongodb+srv://buihuy:123@cluster0.kl7hpzs.mongodb.net/asm";
+var uri = "mongodb+srv://buihuy:123@cluster0.kl7hpzs.mongodb.net/";
 mongoose.connect(uri)
 .then(() => console.log ("Connect to DB succeed !"))
 .catch((err) => console.log (err));

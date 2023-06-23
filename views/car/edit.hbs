@@ -1,5 +1,5 @@
 <div class="container text-center mt-3 mb-3 col-md-8">
-    <form class="card bg-light ml-3 mr-3" action="/order/edit/{{car._id}}" method="post">
+    <form class="card bg-light ml-3 mr-3" action="/car/edit/{{car._id}}" method="post">
         <h1 class="text text-primary mt-2 mb-2">Edit</h1>
         <div class="form-group mt-2 mb-2">
             <label class="fw-bold" for="">Name</label>
@@ -15,10 +15,23 @@
         </div>
         <div class="form-group mt-2 mb-2">
             <label class="fw-bold" for="">Date</label>
-            <input class="form-control" type="text" name="Date" value={{ car.Date }} required>
+            <input class="form-control" type="date" name="Date" value={{ car.Date }} required>
         </div>
-        
-        <select id="branch" name="branch"> 
+        <div class="form-group mt-2 mb-2">
+         <label class="fw-bold" for="">Best Seller</label>
+        <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked value= {{ car.BestSeller}} required>
+        <label class="form-check-label" for="flexRadioDefault1">
+        Yes
+        </label>
+        </div>
+        <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked value= {{ car.BestSeller}} required>
+        <label class="form-check-label" for="flexRadioDefault2">
+        No
+        </label>
+        </div>
+        <select id="type" name="Brand" > 
         <option>BMW </option>
         <option>Toyota </option>
         </select>
