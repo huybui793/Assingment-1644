@@ -7,6 +7,7 @@ var toySchema = mongoose.Schema(
         Quality: String,
         Price: Number,
         type: String
+        
     },
 
 
